@@ -43,7 +43,7 @@ public class NoteActivity extends AppCompatActivity {
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String topic = getTitle().toString();
+                String topic = noteTitleEditText.getText().toString();
                 String title = noteTitleEditText.getText().toString();
                 String content = noteContentEditText.getText().toString();
                 SharedPreferences preferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
